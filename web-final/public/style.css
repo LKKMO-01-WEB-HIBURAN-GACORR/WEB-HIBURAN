@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #212121;
+    background: #424242;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    font-weight: 500;
+}
+
+ul {
+    margin: 0.5rem 0;
+    padding-left: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 7.5rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-logo img {
+    height: 3.5rem;
+}
+
+.header-search {
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background: #616161;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-icon {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+}
+
+.footer-title {
+    font-size: 0.8rem;
+}
+
+.heading {
+    width: fit-content;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    background: #eeeeee;
+    padding: 0.75rem 1.25rem;
+    margin: 1rem 0;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box .form-control {
+    border-radius: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.search-action {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    color: #212121;
+    bottom: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.container {
+    width: 40rem;
+    max-width: 100%;
+}
+
+.alert {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.alert-danger {
+    color: #fff;
+    background: #c62828;
+}
+
+.alert-success {
+    color: #fff;
+    background: #2E7D32;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #757575;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    border-radius: 0.5rem;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    background: #eeeeee;
+    border-radius: 50%;
+}
+
+.avatar-lg {
+    width: 7rem;
+    height: 7rem;
+    font-size: 2.4rem;
+}
+
+.form-control {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    color: #424242;
+    border-radius: 0.5rem;
+    border: 0;
+    outline: 0;
+}
+
+.form-control[type="file"] {
+    color: #fff;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-inline {
+    flex-direction: row;
+    margin: 1rem 0;
+}
+
+.btn {
+    width: auto;
+    display: inline-flex;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background: #212121;
+}
+
+.btn-danger {
+    color: #fff;
+    background: #b71c1c;
+}
+
+.button-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.hstack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.track-item {
+    position: relative;
+    width: calc(50% - 0.5rem);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.track-container {
+    position: relative;
+    width: calc(50% - 0.5rem);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.track-action {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    width: 100%;
+}
+
+.track-img {
+    display: block;
+    width: 100%;
+    filter: brightness(0.45);
+}
+
+.track-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    color: #fff;
+}
+
+.track-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.track-subtitle {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.post-item {
+    position: relative;
+    text-decoration: none;
+}
+
+.post-img {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.post-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #eeeeee;
+}
+
+.post-content {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    text-align: justify;
+    color: #fff;
+}
+
+.post-action {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.playlist-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    background: #616161;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.playlist-title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.playlist-subtitle {
+    color: #eeeeee;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.playlist-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.playlist-song {
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.playlist-song + .playlist-song {
+    margin-left: -5rem;
+}
+
+.playlist-song img {
+    height: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+table td,
+table th {
+    color: #fff;
+    padding: 1rem;
+    vertical-align: top;
+}
